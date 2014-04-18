@@ -1,0 +1,6 @@
+# bundler
+.bundle
+vendor/bundle
+
+# generated gem files
+*.gem
