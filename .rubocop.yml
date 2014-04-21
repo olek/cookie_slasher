@@ -1,0 +1,7 @@
+AllCops:
+  Include:
+  - cookie_slasher.gemspec
+  - Rakefile
+  - Gemfile
+Documentation:
+  Enabled: false

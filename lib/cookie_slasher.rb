@@ -7,7 +7,9 @@
 # are present on those cacheable responses.
 
 class CookieSlasher
-  def initialize(app, logger=nil)
+  VERSION = '0.1.0'
+
+  def initialize(app, logger = nil)
     @app = app
     @logger = logger
   end
@@ -42,7 +44,8 @@ class CookieSlasher
   def log(env, cookies_header)
     path = env['PATH_INFO']
 
-    message = "CookieSlasher: slashing #{cookies_header.inspect} at #{path.inspect}"
+    message = "CookieSlasher: slashing #{cookies_header.inspect} " \
+                             "at #{path.inspect}"
     if !@logger && defined?(Rails)
       Rails.logger.warn(message)
     else

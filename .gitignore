@@ -1,6 +1,9 @@
 # bundler
 .bundle
 vendor/bundle
+Gemfile.lock
 
 # generated gem files
 *.gem
+
+coverage
