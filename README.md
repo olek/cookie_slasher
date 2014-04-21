@@ -1,5 +1,7 @@
 # cookie_slasher
 
+[![Build Status](https://secure.travis-ci.org/olek/cookie_slasher.png)](http://travis-ci.org/olek/cookie_slasher)
+
 ## Synopsis
 
 Rack middleware, removes cookies from responses that are likely to be accidentally cached.
